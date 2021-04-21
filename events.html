@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chamber Events!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+<link href="main.css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link href="jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+<div>
+  <div class="main text-center">
+    <h1>Chamber Events</h1>
+  </div>
+
+<img  src="fargo.jpg" alt="Picture of Fargo" width = "300">
+<img src="fargopic2.png" alt = "Picture of Fargo" width = "300">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Business Training</h2>
+        <p>Looking for practical, affordable training opportunities to advance your career and skill set?
+          That’s exactly what The Chamber’s Business Training program sessions are all about.</p>
+        </div>
+        
+<div class="col-sm-4">
+    <h2>Eggs & Issues</h2>
+      <p>Our region faces an array of challenges and opportunities,
+      and Eggs & Issues offers insight on the issues affecting us in the metro.</p>
+    </div>
+    
+<div class="col-sm-4">
+<h2>Women Connect</h2>  
+        <p>Each time you come to an event, you can expect knowledgeable speakers addressing a range of
+        topics applicable to women in the modern workplace. But it’s not just inspiration and education that you can expect!</p>
+      </div>
+    </div>
+  </div>   
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Wjrrgrvq1ew" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<video width="560" controls>
+    <source src="bbq-grill_Trim.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div id="ui-examples">
+	<div class="example accordion">
+		<div id="group-of-three">
+			<h1>ChamberChoice</h1>
+			<div>
+				<p>
+				Event is on May 30
+				</p>
+				<p>
+				<a href="#step2" id="acc-skip2">Next »</a>
+				</p>
+			</div>
+			<h1>Annual Celebration</h1>
+			<div>
+				<a name="step2"></a>
+				<p>
+				Details are coming soon
+				</p>
+				<p>
+				<a href="#step3" id="acc-skip3">Next »</a>
+				</p>
+			</div>
+			<h1>Corporate Cup</h1>
+			<div>
+				<a name="step3"></a>
+				<p>
+				Event is on May 25
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery-ui-1.10.3.custom.js"></script>
+
+<script>
+$(document).ready(function(){
+	var $group = $('#group-of-three');
+	
+	// default open is 0 { active: 1 }
+	$group.accordion();
+	
+	$('#acc-skip2').click(function() {
+		
+		$group.accordion('option', 'active', 1);
+	});
+	
+	$('#acc-skip3').click(function() {
+		
+		$group.accordion('option', 'active', 2);
+	});
+	
+});
+</script>
+</body>
+</html>

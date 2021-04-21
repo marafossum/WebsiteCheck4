@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Chamber</title>
+        <link href="main.css" rel="stylesheet">
+        <link href="jquery-ui.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+    .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-item-left {
+    background-color:white;
+    padding: 5px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color:white;
+    padding: 5px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+  <header class="main-header">
+    <ul class = "main-nav">
+      <li><a href = "events.html">Events</a></li>
+      <li class= "dropdown">
+      <a href = "contact.html">Contact</a>
+      <ul class = "drop-nav">
+        <li><a href="#">Advocacy in Action</a></li>
+        <li class = "flyout">
+          <a href="#">Community</a>
+        <ul class= "flyout-nav">
+          <li><a href="#">Why FMWF?</a></li>
+          <li><a href="#">Live here</a></li>
+          <li><a href="#">Work here</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Members</a></li>
+      </ul>
+    </li>
+      <li><a href = "about.html">About</a></li>
+    </ul>
+    </header>
+ 
+    <div>
+          
+        <h1 class = "p2">Fargo Moorhead West Fargo Chamber of Commerce </h1>
+
+        <div class="grid-container">
+          <div class="grid-item"><h2>Mission</h2>
+            <p>The Chamber promotes economic growth and prosperity for business and its members<br> 
+                through leadership in advocacy, education and engagement.</p></div>
+          <div class="grid-item">        <h2>Values</h2>
+            <p>The Chamber is the leader in ensuring the growth and prosperity of our regional business<br> 
+                community and members.</p></div>
+          <div class="grid-item">        <h2>Strategic Objectives</h2>
+           
+            <p>- Establish the region as a full-service metropolitan marketplace.</p>
+            <p>- Be a bold voice for business through strong thought leadership and a rich policy agenda.</p>
+            <p>- Build a place of belonging to best serve members’ interests.</p></div> 
+
+                <div class="flex-container">
+                  <div class="flex-item-left"><img src= "bobbi_tracy.jpg" alt = "Chamber picture" width = "250"></div>
+                  <div class="flex-item-right"><img src= "dougb.jpg" alt = "Chamber picture" width = "250"></div>
+                </div>
+
+          <h2 class="demoHeaders">Are you a Chamber member?</h2>
+                <form style="margin-top: 1em;">
+                  <div id="radioset">
+                    <input type="radio" id="radio1" name="radio"><label for="radio1">Yes</label>
+                    <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">No</label>
+                    <input type="radio" id="radio3" name="radio"><label for="radio3">More info</label>
+                  </div>
+                </form>
+
+        </div>
+
+    </body>
+</html>
+
